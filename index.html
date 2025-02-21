@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tabla de Verdad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Tabla de Verdad</h1>
+        <div id="formula" class="formula"></div>
+        <div id="mensaje" class="mensaje"></div>
+        <div class="botones">
+            <button onclick="agregarSimbolo('P')">P</button>
+            <button onclick="agregarSimbolo('Q')">Q</button>
+            <button onclick="agregarSimbolo('R')">R</button>
+            <button onclick="agregarSimbolo('¬')">¬</button>
+            <button onclick="agregarSimbolo('∧')">∧</button>
+            <button onclick="agregarSimbolo('∨')">∨</button>
+            <button onclick="agregarSimbolo('→')">→</button>
+            <button onclick="agregarSimbolo('↔')">↔</button>
+            <button onclick="agregarSimbolo('(')">(</button>
+            <button onclick="agregarSimbolo(')')">)</button>
+            <button onclick="limpiarFormula()">Limpiar</button>
+            <button onclick="generarTabla()">Generar Tabla</button>
+        </div>
+        <div id="tablaVerdad"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
